@@ -14,7 +14,6 @@ function Navbar() {
           Course Finder
         </h1>
 
-        
         <button
           className="text-2xl md:hidden"
           onClick={() => setOpen(!open)}
@@ -22,14 +21,22 @@ function Navbar() {
           ☰
         </button>
 
+        
+        <div className="hidden md:flex gap-6 ml-auto">
+          <Link to="/">Home</Link>
+          <Link to="/courses">Courses</Link>
+          <Link to="/contact">Contact</Link>
+        </div>
+
       </div>
 
     
-      <div className={`${open ? "block" : "hidden"} md:flex gap-4 mt-3`}>
+      <div className={`${open ? "block" : "hidden"} md:hidden mt-3 space-y-2`}>
 
-        <Link to="/" onClick={() => setOpen(false)}>Home</Link>
-        <Link to="/courses" onClick={() => setOpen(false)}>Courses</Link>
-        <Link to="/contact" onClick={() => setOpen(false)}>Contact</Link>
+    
+        <Link className="block px-2 py-1" to="/" onClick={() => setOpen(false)}>Home</Link>
+        <Link className="block px-2 py-1" to="/courses" onClick={() => setOpen(false)}>Courses</Link>
+        <Link className="block px-2 py-1" to="/contact" onClick={() => setOpen(false)}>Contact</Link>
 
       </div>
 
