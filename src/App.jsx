@@ -4,6 +4,7 @@ import Navbar from "./Navbar";
 
 import Home from "./Home";
 import Courses from "./Courses";
+import About from "./About";
 import Contact from "./Contact";
 import Footer from "./Footer";
 import Category from "./Category";
@@ -76,15 +77,17 @@ function App(){
                 <Route path="/" element={
                     
     
-                    <div className="min-h-screen bg-gradient-to-r from-blue-500 to-cyan-400 flex flex-col items-center p-4">
+                    <div className="min-h-screen bg-gradient-to-br from-blue-500 to-cyan-400 flex flex-col items-center p-4">
+                     <div className="flex flex-col md:flex-row items-center gap-10 max-w-6xl w-full">
+                     <div className="flex flex-col gap-4 text-center md:text-left w-full md:w-1/2 ">
+                    <h1 className="text-2xl md:text-4xl font-bold text-white">Find Your Perfect <span className="text-blue-900">Course</span></h1>
+                    <p className=" text-sm md:text-lg text-white">Learn new skills with free & premium courses and grow your career.</p>
+                        <div className="bg-white  w-full max-w-md p-5 rounded-2xl shadow-xl text-center">
 
-                    
-                        <div className="bg-white w-full max-w-md p-6 rounded-xl shadow-lg text-center">
-
-                            <h1 className="text-xl md:text-2xl font-bold mb-4">
+                            <h2 className="text-lg font-bold mb-3">
                                 Course Finder
-                            </h1>
-
+                            </h2>
+ 
                             <select className="w-full p-2 mb-3 border rounded-md" onChange={handleCategoryChange}>
                                 <option>Category</option>
                                 <option value="Marketing">Marketing</option>
@@ -117,9 +120,14 @@ function App(){
                             )}
 
                         </div>
+                        </div>
 
-    
-                        <div className="w-full mt-10">
+                        <div className="w-full md:w-1/2 flex justify-center">
+                        <img className="w-60 md:w-80" alt="student" src="https://png.pngtree.com/png-vector/20241123/ourmid/pngtree-illustration-of-a-business-programmer-character-sitting-in-front-of-a-png-image_14542227.png"/>
+                       </div>
+
+                       </div>
+                        <div className="w-full max-w-6xl mt-12">
                             <Category />
                         </div>
 
@@ -128,6 +136,7 @@ function App(){
 
                 <Route path="/courses" element={<Courses />} />
                 <Route path="/home" element={<Home />} />
+                <Route path="/about" element={<About />}/>
                 <Route path="/contact" element={<Contact/>} />
 
             </Routes>

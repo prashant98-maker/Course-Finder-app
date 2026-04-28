@@ -25,6 +25,7 @@ function Navbar() {
         <div className="hidden md:flex gap-6 ml-auto">
           <Link to="/">Home</Link>
           <Link to="/courses">Courses</Link>
+          <Link to="/about">About</Link>
           <Link to="/contact">Contact</Link>
         </div>
 
@@ -36,6 +37,7 @@ function Navbar() {
     
         <Link className="block px-2 py-1" to="/" onClick={() => setOpen(false)}>Home</Link>
         <Link className="block px-2 py-1" to="/courses" onClick={() => setOpen(false)}>Courses</Link>
+        <Link className="block px-2 py-1" to="/about" onClick={() => setOpen(false)}>About</Link>
         <Link className="block px-2 py-1" to="/contact" onClick={() => setOpen(false)}>Contact</Link>
 
       </div>
