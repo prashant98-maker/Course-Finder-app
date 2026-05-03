@@ -8,6 +8,7 @@ import About from "./About";
 import Contact from "./Contact";
 import Footer from "./Footer";
 import Category from "./Category";
+import Choose from "./Choose";
 
 function App(){
     const [category, setCategory] = useState("");
@@ -78,7 +79,7 @@ function App(){
                     
     
                     <div className="min-h-screen bg-gradient-to-br from-blue-500 to-cyan-400 flex flex-col items-center p-4">
-                     <div className="flex flex-col md:flex-row items-center gap-10 max-w-6xl w-full">
+                     <div className="flex flex-col md:flex-row items-center gap-10 px-6 w-full md:px-16">
                      <div className="flex flex-col gap-4 text-center md:text-left w-full md:w-1/2 ">
                     <h1 className="text-2xl md:text-4xl font-bold text-white">Find Your Perfect <span className="text-blue-900">Course</span></h1>
                     <p className=" text-sm md:text-lg text-white">Learn new skills with free & premium courses and grow your career.</p>
@@ -123,14 +124,14 @@ function App(){
                         </div>
 
                         <div className="w-full md:w-1/2 flex justify-center">
-                        <img className="w-60 md:w-80" alt="student" src="https://png.pngtree.com/png-vector/20241123/ourmid/pngtree-illustration-of-a-business-programmer-character-sitting-in-front-of-a-png-image_14542227.png"/>
+                        <img className="w-64 md:w-96" alt="student" src="https://png.pngtree.com/png-vector/20241123/ourmid/pngtree-illustration-of-a-business-programmer-character-sitting-in-front-of-a-png-image_14542227.png"/>
                        </div>
 
                        </div>
-                        <div className="w-full max-w-6xl mt-12">
+                        <div className="w-full px-6 md:px-16 mt-12">
                             <Category />
                         </div>
-
+                       < Choose />    
                     </div>
                 } />
 
