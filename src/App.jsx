@@ -78,12 +78,14 @@ function App(){
                 <Route path="/" element={
                     
     
-                    <div className="min-h-screen bg-gradient-to-br from-blue-500 to-cyan-400 flex flex-col items-center p-4">
+                    <div className="min-h-screen bg-fixed bg-cover bg-center bg-no-repeat flex flex-col items-center p-4"
+                     style={{backgroundImage:"url(https://img.freepik.com/free-vector/geometric-science-education-background-vector-gradient-blue-digital-remix_53876-125993.jpg?semt=ais_hybrid&w=740&q=80)"}}
+                    >
                      <div className="flex flex-col md:flex-row items-center gap-10 px-6 w-full md:px-16">
                      <div className="flex flex-col gap-4 text-center md:text-left w-full md:w-1/2 ">
                     <h1 className="text-2xl md:text-4xl font-bold text-white">Find Your Perfect <span className="text-blue-900">Course</span></h1>
                     <p className=" text-sm md:text-lg text-white">Learn new skills with free & premium courses and grow your career.</p>
-                        <div className="bg-white  w-full max-w-md p-5 rounded-2xl shadow-xl text-center">
+                        <div className="bg-white/20 backdrop-blur-md border-white/30 w-full max-w-md p-6 rounded-2xl shadow-xl text-center">
 
                             <h2 className="text-lg font-bold mb-3">
                                 Course Finder
