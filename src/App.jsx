@@ -66,6 +66,91 @@ function App(){
             return;
         }
 
+        if (category ==="reactJs" && type === "free"){
+            window.location.href ="https://react.dev/learn";
+            return;
+        }
+        
+        
+        if (category ==="nodeJs" && type === "free"){
+            window.location.href ="https://nodejs.org/learn";
+            return;
+        }
+
+        
+        if (category ==="mongodb" && type === "free"){
+            window.location.href ="https://learn.mongodb.com/";
+            return;
+        }
+
+        
+        if (category ==="ai" && type === "free"){
+            window.location.href ="https://www.elementsofai.com/";
+            return;
+        }
+
+        
+        if (category ==="machineLearning" && type === "free"){
+            window.location.href ="https://developers.google.com/machine-learning/crash-course";
+            return;
+        }
+
+        
+        if (category ==="uiux" && type === "free"){
+            window.location.href ="https://help.figma.com/hc/en-us/categories/360002051613-Get-started";
+            return;
+        }
+
+        
+        if (category ==="cyberSecurity" && type === "free"){
+            window.location.href ="https://www.netacad.com/courses/introduction-to-cybersecurity";
+            return;
+        }
+
+        
+        if (category ==="ethicalHacking" && type === "free"){
+            window.location.href ="https://tryhackme.com/paths";
+            return;
+        }
+
+        
+        if (category ==="Canva" && type === "free"){
+            window.location.href ="https://www.canva.com/en/design-school/";
+            return;
+        }
+
+        
+        if (category ==="excel" && type === "free"){
+            window.location.href ="https://support.microsoft.com/en-us/excel";
+            return;
+        }
+
+        
+        if (category ==="spokenEnglish" && type === "free"){
+            window.location.href ="https://www.bbc.co.uk/learningenglish/";
+            return;
+        }
+
+        
+        if (category ==="communicationSkill" && type === "free"){
+            window.location.href ="https://www.skillsyouneed.com/ips/communication-skills.html";
+            return;
+        }
+
+        
+        if (category ==="gitGithub" && type === "free"){
+            window.location.href ="https://learn.github.com/skills";
+            return;
+        }
+
+        
+        if (category ==="videoEditing" && type === "free"){
+            window.location.href ="https://www.veed.io/learn/video-editing";
+            return;
+        }
+
+        
+        
         setMessage("No Course available. Please select type free.");
     }
 
@@ -92,7 +177,7 @@ function App(){
                             </h2>
  
                             <select className="w-full p-2 mb-3 border rounded-md" onChange={handleCategoryChange}>
-                                <option>Category</option>
+                                <option aria-required>Category</option>
                                 <option value="Marketing">Marketing</option>
                                 <option value="Business">Business</option>
                                 <option value="dataAnalysis">Data Analysis</option>
@@ -101,6 +186,22 @@ function App(){
                                 <option value="Flutter">Flutter</option>
                                 <option value="Python">Python</option>
                                 <option value="cLanguage">C Language</option>
+                                <option value="reactJs">React js</option>
+                                <option value="nodeJs">Node.js</option>
+                                <option value="mongodb">MongoDB</option>
+                                <option value="ai">AI Basic</option>
+                                <option value="machineLearning">Machine Learning</option>
+                                <option value="uiux">UI/UX Design</option>
+                                <option value="cyberSecurity">Cyber Security</option>
+                                <option value="ethicalHacking">Ethical Hacking</option>
+                                <option value="Canva">Canva</option>
+                                <option value="excel">Excel</option>
+                                <option value="spokenEnglish">Spoken English</option>
+                                <option value="communicationSkill">Communication Skill</option>
+                                <option value="gitGithub">Git & GitHub</option>
+                                <option value="videoEditing">Video Editing</option>
+                                
+
                             </select>
 
                             <select className="w-full p-2 mb-3 border rounded-md" onChange={handleTypeChange}>
