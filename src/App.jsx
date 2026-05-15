@@ -177,7 +177,7 @@ function App(){
                             </h2>
  
                             <select className="w-full p-2 mb-3 border rounded-md" onChange={handleCategoryChange}>
-                                <option aria-required>Category</option>
+                                <option>Category</option>
                                 <option value="Marketing">Marketing</option>
                                 <option value="Business">Business</option>
                                 <option value="dataAnalysis">Data Analysis</option>
