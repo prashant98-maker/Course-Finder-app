@@ -4,7 +4,7 @@ function Footer() {
   return (
     <footer className="bg-gray-900 text-white">
 
-      <div className="max-w-6xl mx-auto px-6 py-8 text-center">
+      <section className="max-w-6xl mx-auto px-6 py-8 text-center">
 
         
         <h2 className="text-xl font-bold mb-2">
@@ -13,18 +13,18 @@ function Footer() {
 
         
         <p className="text-gray-400 text-sm mb-4">
-          Free courses ka platform jahan se aap skills seekh kar apna career grow kar sakte ho.
+          Course Finder helps users discover free online courses, learn new skills and grow their careers.
         </p>
 
       
         <p className="text-gray-300 text-sm italic">
           Learning never stops, keep growing every day. 
-        </p><br/>
+        </p>
         
         <p className="text-gray-300 text-sm italic">
-          Course Finder. All Rights Reserved.</p>
+         @ 2026 Course Finder. All Rights Reserved.</p>
 
-      </div>
+      </section>
 
     </footer>
   );

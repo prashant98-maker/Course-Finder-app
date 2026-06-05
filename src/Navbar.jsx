@@ -1,5 +1,5 @@
 import { useState } from "react";
-import { Link } from "react-router-dom";
+import { NavLink } from "react-router-dom";
 
 function Navbar() {
   const [open, setOpen] = useState(false);
@@ -15,6 +15,7 @@ function Navbar() {
         </h1>
 
         <button
+          aria-label="Open navigation menu"
           className="text-2xl md:hidden"
           onClick={() => setOpen(!open)}
         >
@@ -22,25 +23,47 @@ function Navbar() {
         </button>
 
         
-        <div className="hidden md:flex gap-6 ml-auto">
-          <Link to="/">Home</Link>
-          <Link to="/courses">Courses</Link>
-          <Link to="/about">About</Link>
-          <Link to="/contact">Contact</Link>
-        </div>
+        <ul className="hidden md:flex gap-6 ml-auto">
+          <li>
+            <NavLink to="/">Home</NavLink>
+          </li>
+         
+          <li>
+             <NavLink to="/courses">Courses</NavLink>
+          </li>
+         
+          <li>
+             <NavLink to="/about">About</NavLink>
+          </li>
+          
+          <li>
+            <NavLink to="/contact">Contact</NavLink>
+          </li>
+        </ul>
 
       </div>
 
     
-      <div className={`${open ? "block" : "hidden"} md:hidden mt-3 space-y-2`}>
+      <ul className={`${open ? "block" : "hidden"} md:hidden mt-3 space-y-2`}>
 
-    
-        <Link className="block px-2 py-1" to="/" onClick={() => setOpen(false)}>Home</Link>
-        <Link className="block px-2 py-1" to="/courses" onClick={() => setOpen(false)}>Courses</Link>
-        <Link className="block px-2 py-1" to="/about" onClick={() => setOpen(false)}>About</Link>
-        <Link className="block px-2 py-1" to="/contact" onClick={() => setOpen(false)}>Contact</Link>
+        <li>
+             <NavLink className="block px-2 py-1" to="/" onClick={() => setOpen(false)}>Home</NavLink>
+        </li>
 
-      </div>
+        <li>
+            <NavLink className="block px-2 py-1" to="/courses" onClick={() => setOpen(false)}>Courses</NavLink>
+       </li>
+       
+       <li>
+            <NavLink className="block px-2 py-1" to="/about" onClick={() => setOpen(false)}>About</NavLink>
+      </li>
+
+      <li>
+            <NavLink className="block px-2 py-1" to="/contact" onClick={() => setOpen(false)}>Contact</NavLink>
+
+      </li>
+           
+      </ul>
 
     </nav>
   );
